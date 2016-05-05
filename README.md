@@ -10,51 +10,17 @@ Animations on hover on blocks elements with background image - made with CSS3
 ## How to contribute
 
 1. Fork this repo
-<!-- 2. Edit the `index.html` and `menu-animation.css`
+2. Edit the `index.html` and `hover-block-animation.css`
 
 ##### index.html
 
 ```html
-<section class="navigation navigation-NEXT-NUMBER">
-  <div class="title">Menu | NEXT-NUMBER</div>
-  <ul>
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Gallery</a></li>
-    <li><a href="#">Shop</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</section>
 ```
 
-##### css/menu-animation.css
+##### css/hover-block-animation.css
 
 ```css
-/***/
-/*** NEXT-NUMBER ***/
-
-.navigation-NEXT-NUMBER li a {
-  transition: color 500ms ease-in-out;
-}
-.navigation-NEXT-NUMBER li a::before {
-  height: 3px;
-  background: #00A29A;
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: scale3d(0, 1, 1);
-  transition: transform 500ms;
-}
-.navigation-NEXT-NUMBER li:hover a {
-  color: #00A29A;
-}
-.navigation-NEXT-NUMBER li.active a::before {
-  transform: scale3d(1, 1, 1);
-  transition: transform 500ms cubic-bezier(.57,1,.3,1.73);
-}
-``` -->
+```
 
 And push to create a pull request
 
