@@ -1,4 +1,4 @@
-# Menu Animation
+# Hover Block Animation
 
 ###### Sandbox
 Animations on hover on blocks elements with background image - made with CSS3
