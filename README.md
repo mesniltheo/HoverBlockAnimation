@@ -1,16 +1,16 @@
 # Menu Animation
 
 ###### Sandbox
-Simple animations on element :before for menu hover with CSS3
+Animations on hover on blocks elements with background image - made with CSS3
 
-[Demo](http://www.theomesnil.com/demo/MenuAnimation/) / [Direct Download](http://www.theomesnil.com/demo/MenuAnimation/MenuAnimation.zip)
+[Demo](http://www.theomesnil.com/demo/HoverBlockAnimation/) / [Direct Download](http://www.theomesnil.com/demo/HoverBlockAnimation/HoverBlockAnimation.zip)
 
-![alt text](http://www.theomesnil.com/data/images/MenuAnimation.gif "theomesnil.com")
+![alt text](http://www.theomesnil.com/data/images/HoverBlockAnimation.gif "theomesnil.com")
 
 ## How to contribute
 
 1. Fork this repo
-2. Edit the `index.html` and `menu-animation.css`
+<!-- 2. Edit the `index.html` and `menu-animation.css`
 
 ##### index.html
 
@@ -54,7 +54,7 @@ Simple animations on element :before for menu hover with CSS3
   transform: scale3d(1, 1, 1);
   transition: transform 500ms cubic-bezier(.57,1,.3,1.73);
 }
-```
+``` -->
 
 And push to create a pull request
 
