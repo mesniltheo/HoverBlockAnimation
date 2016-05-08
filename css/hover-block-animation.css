@@ -13,6 +13,16 @@ section:nth-child(2n) {
   color: #000000;
   margin-bottom: 20px;
 }
+.inspiration {
+  font-style: italic;
+  margin-top: 10px;
+}
+.inspiration a {
+  color: #a4a4a4;
+}
+.inspiration a:hover {
+  color: #00A29A;
+}
 .block {
   width: 1000px;
   max-width: 90%;
@@ -142,7 +152,7 @@ section:nth-child(2n) {
   position: absolute;
   width: 100%;
   top: 100%;
-  transition: top 1500ms;
+  transition: top 1200ms;
 }
 
 .block-3:hover .block-text span {
@@ -206,7 +216,7 @@ section:nth-child(2n) {
 }
 
 .block-4:hover .block-text {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   transform: scale(0.9);
 }
 
