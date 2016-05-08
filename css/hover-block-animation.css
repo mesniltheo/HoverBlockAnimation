@@ -175,3 +175,48 @@ section:nth-child(2n) {
 .block-3:hover .block-text span:last-child {
   top: 34%;
 }
+
+/***/
+/*** 4 ***/
+
+.block-4 .block-image {
+  background-image: url('../images/block4.jpeg');
+  transform: scale(1);
+  transition: transform 500ms;
+}
+
+.block-4:hover .block-image {
+  transform: scale(1.1);
+}
+
+.block-4 .block-text {
+  width: 90%;
+  height: 85%;
+  left: 5%;
+  top: 7.5%;
+  border: 1px solid #00A29A;
+  opacity: 1;
+  background: transparent;
+  display: table;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  transition: background 500ms, transform 500ms;
+  transform: scale(1);
+}
+
+.block-4:hover .block-text {
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+}
+
+.block-4 .block-text span {
+  vertical-align: middle;
+  display: table-cell;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.block-4:hover .block-text span {
+  transform: scale(1.5);
+}
