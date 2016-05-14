@@ -49,42 +49,52 @@ section:nth-child(2n) {
   width: 100%;
   height: 100%;
   opacity: 0;
-  display: table;
   position: absolute;
-  bottom: 0;
+  top: 0;
+}
+.block-text-center {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.block-text-center div {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /***/
 /*** 1 ***/
 
+.block-1 {
+  transition: transform 500ms;
+}
+.block-1:hover {
+  transform: scale(.95);
+  transition: transform 500ms;
+}
 .block-1 .block-image {
   background-image: url('../images/block1.jpeg');
-  transition: transform 500ms;
 }
 .block-1 .block-text {
   height: 100px;
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,162,164,0.8) 100%);
   transition: opacity 300ms;
-}
-.block-1 .block-text span {
-  opacity: 0;
-  vertical-align: middle;
-  color: white;
-  padding-left: 40px;
-  display: table-cell;
-  font-size: 25px;
-  transform: translate(0, 10px);
-  transition: opacity 200ms, transform 300ms;
-}
-.block-1:hover .block-image {
-  transform: scale(.95);
-  transition: transform 500ms;
+  bottom: 0;
+  top: auto;
 }
 .block-1:hover .block-text {
   opacity: 1;
   transition: opacity 1000ms;
 }
-.block-1:hover .block-text span {
+.block-1 .block-text-center div {
+  opacity: 0;
+  color: white;
+  padding-left: 40px;
+  font-size: 25px;
+  transform: translate(0, 10px);
+  transition: opacity 200ms, transform 300ms;
+}
+.block-1:hover .block-text-center div {
   opacity: 1;
   transition: opacity 300ms, transform 500ms;
   transform: translate(0, 0);
@@ -99,7 +109,6 @@ section:nth-child(2n) {
   transition: background-image 300ms, background-color: 300ms;
 }
 .block-2 .block-text {
-  padding-top: 23%;
   box-sizing: border-box;
   background: #00A29A;
   margin-left: -100%;
@@ -124,7 +133,6 @@ section:nth-child(2n) {
   font-family: 'Lato', sans-serif;
   color: #f4f4f4;
 }
-
 .block-2:hover .block-text span {
   margin-left: 25px;
 }
@@ -135,55 +143,44 @@ section:nth-child(2n) {
 .block-3 .block-image {
   background-image: url('../images/block3.jpeg');
 }
-
-.block-text {
+.block-3 .block-text {
   background: rgba(0, 162, 164, .7);
   transition: opacity 500ms;
 }
-
 .block-3:hover .block-text {
   opacity: 1;
 }
-
-.block-3 .block-text span {
+.block-3 .block-text {
   font-family: 'Montserrat', sans-serif;
-  display: block;
   text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 100%;
-  transition: top 1200ms;
 }
-
-.block-3:hover .block-text span {
-  transition: top 900ms;
+.block-3 .block-text-center div span {
+  display: block;
+  font-size: 0px;
+  transition: font-size 300ms;
 }
-
 .block-3 .block-text span:first-child {
-  font-size: 35px;
   color: white;
   text-transform: uppercase;
 }
 .block-3:hover .block-text span:first-child {
-  top: 20%;
+  font-size: 35px;
 }
-
 .block-3 .block-text span:nth-child(2) {
   color: #f4f4f4;
-  font-size: 25px;
-  transition-delay: 130ms;
+  margin-bottom: 5px;
 }
 .block-3:hover .block-text span:nth-child(2) {
-  top: 27%;
+  font-size: 20px;
+  transition-delay: 300ms;
 }
-
 .block-3 .block-text span:last-child {
   font-family: 'Lato', sans-serif;
   color: white;
-  transition-delay: 250ms;
 }
 .block-3:hover .block-text span:last-child {
-  top: 34%;
+  font-size: 15px;
+  transition-delay: 500ms;
 }
 
 /***/
@@ -194,11 +191,9 @@ section:nth-child(2n) {
   transform: scale(1);
   transition: transform 500ms;
 }
-
 .block-4:hover .block-image {
   transform: scale(1.1);
 }
-
 .block-4 .block-text {
   width: 90%;
   height: 85%;
@@ -207,26 +202,51 @@ section:nth-child(2n) {
   border: 1px solid #00A29A;
   opacity: 1;
   background: transparent;
-  display: table;
   text-align: center;
   color: white;
   font-size: 50px;
   transition: background 500ms, transform 500ms;
   transform: scale(1);
 }
-
 .block-4:hover .block-text {
   background: rgba(0, 0, 0, 0.2);
-  transform: scale(0.9);
+  transform: scale(0.95);
+}
+.block-4 .block-text-center {
+  transition: transform 500ms;
+}
+.block-4:hover .block-text-center {
+  transform: scale(1.6);
 }
 
-.block-4 .block-text span {
-  vertical-align: middle;
-  display: table-cell;
+/***/
+/*** 5 ***/
+
+.block-5 .block-image {
+  background-image: url('../images/block5.jpeg');
   transform: scale(1);
-  transition: transform 300ms;
+  transition: transform 500ms;
 }
 
-.block-4:hover .block-text span {
-  transform: scale(1.5);
+.block-5:hover .block-image {
+  transform: scale(1.3);
+}
+
+.block-5 .block-text {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.block-5 .block-text span {
+  width: 100%;
+  display: block;
+}
+
+.block-5 .block-text span:nth-child(2) {
+  height: 1px;
+  background: white;
+}
+
+.block-5:hover .block-text {
 }
