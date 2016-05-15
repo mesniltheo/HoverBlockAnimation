@@ -5,7 +5,7 @@ Animations on hover on blocks elements with background image - made with CSS3
 
 [Demo](http://www.theomesnil.com/demo/HoverBlockAnimation/) / [Direct Download](http://www.theomesnil.com/demo/HoverBlockAnimation/HoverBlockAnimation.zip)
 
-![alt text](http://www.theomesnil.com/data/images/MenuAnimation.gif "theomesnil.com")
+![alt text](http://www.theomesnil.com/data/images/HoverBlockAnimation.gif "theomesnil.com")
 
 ## How to contribute
 
