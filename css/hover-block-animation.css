@@ -100,6 +100,15 @@ section:nth-child(2n) {
   transform: translate(0, 0);
   transition-delay: 100ms;
 }
+@media screen and (max-width: 640px) {
+  .block-1 .block-text-center div {
+    font-size: 15px;
+    padding-left: 20px;
+  }
+  .block-1 .block-text {
+    height: 50px;
+  }
+}
 
 /***/
 /*** 2 ***/
@@ -135,6 +144,17 @@ section:nth-child(2n) {
 }
 .block-2:hover .block-text span {
   margin-left: 25px;
+}
+@media screen and (max-width: 640px) {
+  .block-2 .block-text span {
+    font-size: 21px;
+  }
+  .block-2:hover .block-text span {
+    margin-left: 10px;
+  }
+  .block-2 .block-text span:last-child {
+    font-size: 17px;
+  }
 }
 
 /***/
@@ -181,6 +201,17 @@ section:nth-child(2n) {
 .block-3:hover .block-text span:last-child {
   font-size: 15px;
   transition-delay: 500ms;
+}
+@media screen and (max-width: 640px) {
+  .block-3:hover .block-text span:first-child {
+    font-size: 19px;
+  }
+  .block-3:hover .block-text span:nth-child(2) {
+    font-size: 15px;
+  }
+  .block-3:hover .block-text span:last-child {
+    font-size: 12px;
+  }
 }
 
 /***/
@@ -279,4 +310,22 @@ section:nth-child(2n) {
 .block-5:hover .block-text-center div span:last-child {
   transform: translateY(15px);
   opacity: 1;
+}
+@media screen and (max-width: 640px) {
+  .block-5 .block-text-center div span:first-child {
+    font-size: 25px;
+  }
+  .block-5 .block-text-center div span:last-child {
+    font-size: 13px;
+  }
+  .block-5 .block-text-center div span:nth-child(2) {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .block-5:hover .block-text-center div span:first-child {
+    transform: translateY(-15px);
+  }
+  .block-5:hover .block-text-center div span:last-child {
+    transform: translateY(10px);
+  }
 }
